@@ -1,5 +1,8 @@
 <div class="item">
-    <p>{{item?.name}}</p>
-    <p>{{item?.dueDate | date:'dd/MM/yyyy'}}</p>
+    <p>{{item.created | date:'yyyy-MM-dd'}}</p>
+    <p>{{item.title}}</p>
+    <p>{{item.description}}</p>
+    <p>{{item.due}}</p>
+    <p>{{item.status}}</p>
     <button (click)="deleteItem()">Delete</button>
 </div>

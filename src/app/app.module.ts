@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +15,7 @@ import { TodoListItemComponent } from './todo-list-item/todo-list-item.component
   imports: [
     FormsModule,
     CommonModule,
+    HttpClientModule,
     BrowserModule
   ],
   providers: [],

@@ -1,4 +1,9 @@
 export interface ToDoItem {
-    name: string;
-    dueDate: Date;
+    created: string;
+    title: string;
+    description: string;
+    due: string;
+    status: string;
+    userName?: string;
+    id: number
 }
