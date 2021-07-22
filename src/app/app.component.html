@@ -1,9 +1,12 @@
-<input type="title" [(ngModel)]="title" placeholder="Title" />
-<input type="date" [(ngModel)]="date" />
-<input type="text" [(ngModel)]="description" placeholder="Description" />
-<input type="text" [(ngModel)]="status" placeholder="Status" />
-<button (click)="addItem()">Add</button>
+<body>
+<input class="taskbarparameters" type="title" [(ngModel)]="title" placeholder="Title" />
+<input class="taskbarparameters" type="date" [(ngModel)]="date" />
+<input class="taskbarparameters" type="text" [(ngModel)]="description" placeholder="Description" />
+<input class="taskbarparameters" type="text" [(ngModel)]="status" placeholder="Status" />
+<button class="taskbarparameters" (click)="addItem()">Add</button>
 
 <hr>
+<br>
 
 <app-todo-list-item *ngFor="let item of todoItems; let i = index" [item]="item" (delete)="deleteItem(i)"></app-todo-list-item>
+</body>
