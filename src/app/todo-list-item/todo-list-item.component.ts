@@ -13,7 +13,7 @@ export class TodoListItemComponent {
   @Output() delete = new EventEmitter<unknown>();
 
   deleteItem(): void {
-    this.delete.emit();  //.next - deprecated
+    this.delete.next();
   }
 
 }
